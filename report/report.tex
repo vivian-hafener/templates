@@ -1,0 +1,55 @@
+\input{preamble}
+\usepackage[
+backend=biber,
+style=alphabetic,
+]{biblatex}
+\addbibresource{references.bib}
+\bibliography{references.bib}
+
+\begin{document}
+% ----------------------------------------* TITLE
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+ 
+        \begin{center}\begin{Huge}
+            Report Title
+        \end{Huge}\end{center}
+        
+        \begin{center}\begin{Large}
+            Subtitle
+        \end{Large}\end{center}
+
+        \begin{center}
+            Vivian Hafener
+        \end{center}
+   
+        \vfill
+             
+        \today \\
+        Department Name\\
+        University Name             
+    \end{center}
+ \end{titlepage}
+
+
+\begin{quotation}
+	\noindent \textbf{Synopsis:} \lipsum[1]
+\end{quotation}
+
+% ----------------------------------------* BODY
+\tableofcontents
+
+\section{Section 1}
+
+\lipsum[2-3]
+
+This is where a citation will go \cite{latexcompanion}.
+
+\section{Section 2}
+
+\lipsum[4-5]
+
+\printbibliography
+
+\end{document}
